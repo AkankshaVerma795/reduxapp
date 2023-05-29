@@ -1,8 +1,8 @@
 
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-// import Home from './pages/Home';
-// import Cart from './pages/Cart';
+//  import Home from './pages/Home';
+import Cart from './pages/Cart';
 import Product from './components/Product';
 import Navbar from './components/Navbar';
 
@@ -12,9 +12,8 @@ function App() {
                 <BrowserRouter>
                     <Navbar />
                     <Routes>
-                        <Route path="/" ></Route>
-                        <Route path="/cart" ></Route>
-                        <Route path="/components/Product" ></Route>
+                        <Route path="/cart" element={Cart} ></Route>
+                <Route path="/product" element={<Product/>}></Route>                        
                     </Routes>
                 </BrowserRouter>
         
